@@ -15,8 +15,8 @@
         h1, h2 {
             color: #111;
         }
-        a {
-            color: #0066cc;
+        ul {
+            margin-left: 20px;
         }
     </style>
 </head>
@@ -29,40 +29,43 @@
 <ul>
     <li>Email address</li>
     <li>Username</li>
-    <li>Password (encrypted)</li>
-    <li>GPS location data</li>
+    <li>Encrypted password</li>
+    <li>GPS location data (with user permission)</li>
     <li>Profile information</li>
-    <li>Posts (images, videos, music)</li>
-    <li>Comments and interactions</li>
-    <li>Reports and messages</li>
+    <li>Posts including images, videos, and music</li>
+    <li>Comments, likes, follows, and interactions</li>
+    <li>Reports and block activity</li>
+    <li>Device and usage information</li>
 </ul>
 
 <h2>2. How We Use Your Information</h2>
-<p>We use collected information to:</p>
 <ul>
-    <li>Create and manage user accounts</li>
-    <li>Enable posting and social interactions</li>
-    <li>Improve app functionality</li>
-    <li>Prevent abuse and enforce community rules</li>
-    <li>Send important account-related emails</li>
+    <li>To create and manage user accounts</li>
+    <li>To authenticate users using JWT (JSON Web Tokens)</li>
+    <li>To enable posting, messaging, commenting, and sharing</li>
+    <li>To allow blocking, reporting, and moderation</li>
+    <li>To improve performance and user experience</li>
+    <li>To send important account-related emails via Nodemailer</li>
 </ul>
 
 <h2>3. Location Data</h2>
-<p>Lyncyap may collect GPS location data to enhance user experience. 
-Location data is not sold to third parties.</p>
-
-<h2>4. Data Storage</h2>
 <p>
-User data is stored securely using MongoDB Atlas. 
-Media files are stored using Cloudinary. 
-We use JWT authentication to protect accounts.
+Lyncyap may collect GPS location data to enhance user experience. 
+Location data is collected only with user permission and is not sold or shared for advertising purposes.
+</p>
+
+<h2>4. Data Storage & Security</h2>
+<p>
+User account data is stored securely using MongoDB Atlas. 
+Media files (images, videos, music) are stored using Cloudinary. 
+We use JWT-based authentication and implement industry-standard security measures to protect user accounts.
 </p>
 
 <h2>5. Third-Party Services</h2>
 <ul>
-    <li>MongoDB Atlas</li>
-    <li>Cloudinary</li>
-    <li>Nodemailer (for email services)</li>
+    <li>MongoDB Atlas (database storage)</li>
+    <li>Cloudinary (media storage)</li>
+    <li>Nodemailer (email services)</li>
     <li>Google Play Services</li>
 </ul>
 
@@ -70,21 +73,35 @@ We use JWT authentication to protect accounts.
 <p>Users may:</p>
 <ul>
     <li>Delete posts, comments, or messages</li>
-    <li>Unfollow or block other users</li>
-    <li>Delete their account</li>
+    <li>Unlike or unfollow users</li>
+    <li>Block or unblock users</li>
+    <li>Report content or users</li>
+    <li>Request account deletion</li>
 </ul>
 
-<h2>7. Sharing</h2>
-<p>Users may share posts to other apps. Lyncyap is not responsible for how third-party apps use shared content.</p>
+<h2>7. Sharing to Other Apps</h2>
+<p>
+Users may share content to third-party apps. 
+Lyncyap is not responsible for how external platforms use shared content.
+</p>
 
-<h2>8. Security</h2>
-<p>We implement industry-standard security practices to protect your information.</p>
+<h2>8. Data Retention</h2>
+<p>
+We retain user data as long as the account remains active. 
+Upon account deletion, personal data and associated media will be permanently removed, 
+except where temporary retention is required for security or legal reasons.
+</p>
 
 <h2>9. Changes to This Policy</h2>
-<p>We may update this Privacy Policy at any time.</p>
+<p>
+We may update this Privacy Policy periodically. Continued use of the app means acceptance of any updates.
+</p>
 
 <h2>10. Contact Us</h2>
-<p>Email: your@email.com</p>
+<p>
+If you have questions about this Privacy Policy, contact us at:<br>
+<strong>elkanamagusi901@gmail.com</strong>
+</p>
 
 </body>
 </html>
